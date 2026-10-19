@@ -1,0 +1,5 @@
+{
+  "_note": "Fixture robots.txt rules per synthetic domain (paths disallowed for our user agent).",
+  "northgate-freight.example.com": ["/"],
+  "valemont.example.com": ["/news"]
+}

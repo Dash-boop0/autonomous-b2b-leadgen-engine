@@ -1,0 +1,14 @@
+{
+  "_note": "SYNTHETIC licensed-dataset fixture. Fictional people, example.* domains, +44 7700 900xxx fictional numbers.",
+  "contacts": [
+    {"record_id": "LIC-1001", "account_domain": "northgate-freight.example.com", "full_name": "Harriet Cole", "title": "Chief Operating Officer", "email": "harriet.cole@northgate-freight.example.com", "phone": "+44 7700 900201", "consent_basis": "legitimate_interest_b2b"},
+    {"record_id": "LIC-1002", "account_domain": "northgate-freight.example.com", "full_name": "Imran Shah", "title": "Head of IT", "email": "imran.shah@northgate-freight.example.com", "phone": null, "consent_basis": "legitimate_interest_b2b"},
+    {"record_id": "LIC-1003", "account_domain": "ashdown-haulage.example.com", "full_name": "Grace Whitfield", "title": "Operations Director", "email": "grace.whitfield@ashdown-haulage.example.com", "phone": "+44 7700 900202", "consent_basis": "legitimate_interest_b2b"},
+    {"record_id": "LIC-1004", "account_domain": "ashdown-haulage.example.com", "full_name": "Liam Foster", "title": "Planner", "email": "liam.foster@ashdown-haulage.example.com", "phone": null, "consent_basis": "legitimate_interest_b2b"},
+    {"record_id": "LIC-1005", "account_domain": "bramblewood.example.net", "full_name": "Priya Nair", "title": "Supply Chain Manager", "email": "priya.nair@bramblewood.example.net", "phone": null, "consent_basis": "legitimate_interest_b2b"},
+    {"record_id": "LIC-1006", "account_domain": "glenmore.example.com", "full_name": "Sean Gallagher", "title": "Managing Director", "email": "sean.gallagher@glenmore.example.com", "phone": "+44 7700 900203", "consent_basis": "legitimate_interest_b2b"},
+    {"record_id": "LIC-1007", "account_domain": "larchfield.example.net", "full_name": "Femke Bakker", "title": "Inventory Manager", "email": "femke.bakker@larchfield.example.net", "phone": null, "consent_basis": "legitimate_interest_b2b"},
+    {"record_id": "LIC-1008", "account_domain": "fenwick-pallets.example.org", "full_name": "Ciara Doyle", "title": "Finance Director", "email": "ciara.doyle@fenwick-pallets.example.org", "phone": null, "consent_basis": "legitimate_interest_b2b"},
+    {"record_id": "LIC-1009", "account_domain": "kestrel-components.example.org", "full_name": "Lena Hoffmann", "title": "VP Operations", "email": "Lena.Hoffmann@kestrel-components.example.org", "phone": null, "consent_basis": "legitimate_interest_b2b"}
+  ]
+}

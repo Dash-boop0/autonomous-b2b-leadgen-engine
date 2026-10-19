@@ -1,0 +1,41 @@
+{
+  "_note": "SIMULATED mailbox outcomes for the dry-run campaign. Deterministic per recipient. Not real results.",
+  "default": "delivered_no_reply",
+  "followup_default": "delivered_no_reply",
+  "by_email": {
+    "ava.thornton@brightlane.example.com": "interested",
+    "niamh.byrne@copperfield-wholesale.example.com": "pricing_question",
+    "lena.hoffmann@kestrel-components.example.org": "product_question",
+    "harriet.cole@northgate-freight.example.com": "unsubscribe",
+    "grace.whitfield@ashdown-haulage.example.com": "out_of_office",
+    "sean.gallagher@glenmore.example.com": "not_interested",
+    "aoife.kelly@quayside.example.net": "legal_question",
+    "priya.nair@bramblewood.example.net": "ambiguous",
+    "marcus.bell@pinecrest.example.org": "bounce",
+    "femke.bakker@larchfield.example.net": "referral"
+  },
+  "scenarios": {
+    "delivered_no_reply": ["delivered"],
+    "interested": ["delivered", "replied"],
+    "pricing_question": ["delivered", "replied"],
+    "product_question": ["delivered", "replied"],
+    "legal_question": ["delivered", "replied"],
+    "unsubscribe": ["delivered", "replied"],
+    "out_of_office": ["delivered", "replied"],
+    "not_interested": ["delivered", "replied"],
+    "ambiguous": ["delivered", "replied"],
+    "referral": ["delivered", "replied"],
+    "bounce": ["bounced"]
+  },
+  "reply_bodies": {
+    "interested": "Thanks, this is timely - we have been fighting stockouts all quarter. Happy to set up a call next week.",
+    "pricing_question": "Looks relevant. Before we go further, how much does it cost for a team of our size?",
+    "product_question": "Does Northwind integrate with our ERP exports? We mostly work from CSV extracts.",
+    "legal_question": "Interesting. Could you send your DPA and the standard contract terms for review by our legal team?",
+    "unsubscribe": "Please remove me from your list and do not contact me again.",
+    "out_of_office": "Automatic reply: I am out of the office until next Monday with limited access to email.",
+    "not_interested": "No thanks, we already have a forecasting tool and it is not a fit for us right now.",
+    "ambiguous": "Hmm, maybe. Ping me again in the new year?",
+    "referral": "I am not the right person - you should talk to my colleague who runs planning, I have cc'd them."
+  }
+}

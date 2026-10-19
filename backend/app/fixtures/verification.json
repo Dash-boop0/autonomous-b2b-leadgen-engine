@@ -1,0 +1,25 @@
+{
+  "_note": "Fixture for the MOCK DNS and MOCK mailbox verifier. Synthetic example.* domains have no real MX records.",
+  "no_mx_domains": ["saltmarsh.example.com", "willowbrook.example.net"],
+  "dns_error_domains": [],
+  "catch_all_domains": ["harbourview.example.net", "zephyr-parcel.example.com"],
+  "provider_overrides": {
+    "ava.thornton@brightlane.example.com": "valid",
+    "rohan.mehta@brightlane.example.com": "valid",
+    "niamh.byrne@copperfield-wholesale.example.com": "valid",
+    "cian.walsh@copperfield-wholesale.example.com": "unknown",
+    "lena.hoffmann@kestrel-components.example.org": "valid",
+    "marcus.bell@pinecrest.example.org": "valid",
+    "aoife.kelly@quayside.example.net": "valid",
+    "olivia.grant@tidewell.example.org": "valid",
+    "daniel.okafor@tidewell.example.org": "valid",
+    "harriet.cole@northgate-freight.example.com": "valid",
+    "imran.shah@northgate-freight.example.com": "valid",
+    "grace.whitfield@ashdown-haulage.example.com": "valid",
+    "liam.foster@ashdown-haulage.example.com": "invalid",
+    "priya.nair@bramblewood.example.net": "valid",
+    "sean.gallagher@glenmore.example.com": "valid",
+    "femke.bakker@larchfield.example.net": "valid",
+    "ciara.doyle@fenwick-pallets.example.org": "valid"
+  }
+}

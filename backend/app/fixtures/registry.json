@@ -1,0 +1,14 @@
+{
+  "_note": "SYNTHETIC companies-registry fixture. Fictional companies on example.* domains. Stands in for an official registry API with suitable terms.",
+  "companies": [
+    {"registry_id": "SYN-REG-0001", "name": "Brightlane Logistics Limited", "domain": "brightlane.example.com", "industry": "Logistics", "employee_count": 182, "country": "GB", "business_model": "B2B", "revenue_band": "10-50M", "last_filed": "2026-06-30"},
+    {"registry_id": "SYN-REG-0002", "name": "Northgate Freight plc", "domain": "northgate-freight.example.com", "industry": "Logistics", "employee_count": 1200, "country": "GB", "business_model": "B2B", "revenue_band": "250M+", "last_filed": "2026-03-31"},
+    {"registry_id": "SYN-REG-0003", "name": "Kestrel Components GmbH", "domain": "kestrel-components.example.org", "industry": "Manufacturing", "employee_count": 640, "country": "DE", "business_model": "B2B", "revenue_band": "50-250M", "last_filed": "2026-05-15"},
+    {"registry_id": "SYN-REG-0004", "name": "Ashdown Haulage Ltd", "domain": "ashdown-haulage.example.com", "industry": "Logistics", "employee_count": 220, "country": "GB", "business_model": "B2B", "revenue_band": "10-50M", "last_filed": "2026-07-31"},
+    {"registry_id": "SYN-REG-0005", "name": "Bramblewood Foods Wholesale Ltd", "domain": "bramblewood.example.net", "industry": "Wholesale Distribution", "employee_count": 510, "country": "GB", "business_model": "B2B", "revenue_band": "50-250M", "last_filed": "2026-04-30"},
+    {"registry_id": "SYN-REG-0006", "name": "Fenwick Pallets Ltd", "domain": "fenwick-pallets.example.org", "industry": "Manufacturing", "employee_count": 75, "country": "IE", "business_model": "B2B", "revenue_band": "1-10M", "last_filed": "2025-12-31"},
+    {"registry_id": "SYN-REG-0007", "name": "Glenmore Logistics Ltd", "domain": "glenmore.example.com", "industry": "Logistics", "employee_count": 95, "country": "IE", "business_model": "B2B", "revenue_band": "10-50M", "last_filed": "2026-08-31"},
+    {"registry_id": "SYN-REG-0008", "name": "Larchfield Agri Supplies BV", "domain": "larchfield.example.net", "industry": "Wholesale Distribution", "employee_count": 150, "country": "NL", "business_model": "B2B", "revenue_band": "10-50M", "last_filed": "2026-02-28"},
+    {"registry_id": "SYN-REG-0009", "name": "Oakhurst Office Retail Ltd", "domain": "oakhurst.example.com", "industry": "Retail", "employee_count": 900, "country": "GB", "business_model": "B2C", "revenue_band": "50-250M", "last_filed": "2026-01-31"}
+  ]
+}
