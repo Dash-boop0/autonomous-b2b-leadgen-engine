@@ -32,6 +32,8 @@ export function setToken(token: string | null): void {
   }
 }
 
+export const REQUEST_TIMEOUT_MS = 25_000;
+
 export async function request<T>(path: string, init: RequestInit & { json?: unknown } = {}): Promise<T> {
   const headers = new Headers(init.headers);
   const token = getToken();
@@ -43,8 +45,11 @@ export async function request<T>(path: string, init: RequestInit & { json?: unkn
   }
   let res: Response;
   try {
-    res = await fetch(`${API_URL}${path}`, { ...init, headers, body });
-  } catch {
+    // Time-limited so a stalled request (e.g. a serverless cold start) never leaves the UI waiting forever.
+    res = await fetch(`${API_URL}${path}`, { ...init, headers, body, signal: init.signal ?? AbortSignal.timeout(REQUEST_TIMEOUT_MS) });
+  } catch (e) {
+    if (e instanceof DOMException && e.name === "TimeoutError")
+      throw new ApiError(0, "The demo server is taking too long to respond (it may be waking up). Please try again in a few seconds.");
     throw new ApiError(0, `Cannot reach the API at ${API_URL}. Is the backend running?`);
   }
   if (res.status === 401 && typeof window !== "undefined" && !path.startsWith("/api/auth/login")) {
