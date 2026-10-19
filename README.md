@@ -5,6 +5,10 @@ approved campaigns → reply handling → performance feedback**, run by 20 spec
 database-backed workflow engine, with every consequential step (approvals, sending, suppression, permissions)
 enforced by deterministic code.
 
+**Live demo:** https://leadgen-web-zeta.vercel.app · sign in as **operator** / **demo** (also reviewer, admin, viewer) · the first load after a quiet spell can take ~10 s while the free server and database wake up.  
+**Source:** https://github.com/Dash-boop0/autonomous-b2b-leadgen-engine · **Portfolio:** https://dash-boop0.github.io/
+
+
 > **Synthetic demo.** All companies, people and outcomes are fictional (`example.com/.org/.net` domains,
 > `+44 7700 900xxx` numbers). Providers are mocked by default, sending is **dry-run only** (there is no real email
 > sender in this repository), and reply/delivery events are simulated. No paid API or credential is needed.
