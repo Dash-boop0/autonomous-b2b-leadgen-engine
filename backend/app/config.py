@@ -5,6 +5,7 @@ from functools import lru_cache
 from pathlib import Path
 from urllib.parse import parse_qsl, urlencode, urlsplit, urlunsplit
 
+from pydantic import AliasChoices, Field
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 BACKEND_DIR = Path(__file__).resolve().parent.parent
@@ -45,7 +46,12 @@ class Settings(BaseSettings):
     model_config = SettingsConfigDict(env_file=(".env", "../.env"), extra="ignore")
 
     app_mode: str = "demo"  # demo: synthetic data, mock providers, "Reset demo" enabled. No other mode sends anything.
-    database_url: str = _default_db_url()
+    # Neon's Vercel integration injects both a pooled DATABASE_URL (PgBouncer, transaction mode) and DATABASE_URL_UNPOOLED.
+    # Prefer the direct connection: the bootstrap's session-level advisory lock is not reliable through a transaction pooler.
+    database_url: str = Field(
+        default_factory=_default_db_url,
+        validation_alias=AliasChoices("DATABASE_URL_UNPOOLED", "DATABASE_URL"),
+    )
     # Demo-only signing key for session tokens. Override in any shared deployment.
     secret_key: str = "dev-only-insecure-key-change-me"
     token_ttl_minutes: int = 720
